@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class InfoBlog extends Component
 {
-    public Post $post;
+//    public Post $post;
 
     public Comment $comment;
 
@@ -26,19 +26,19 @@ class InfoBlog extends Component
 
     public function mount()
     {
-        $this->post->incrementVisit();
+//        $this->post->incrementVisit();
 
         $this->comment = new Comment();
 
-        abort_if($this->post->status_id != getStatus('publish') , 404);
+//        abort_if($this->post->status_id != getStatus('publish') , 404);
 
     }
 
     public function render()
     {
-        
-        $comments = $this->post->comments()->whereNull('parent_id')->where('approved', 1)->paginate(20, ['*'], 'commentsPage');
-        return view('livewire.home.posts.info-blog', compact('comments'));
+
+//        $comments = $this->post->comments()->whereNull('parent_id')->where('approved', 1)->paginate(20, ['*'], 'commentsPage');
+        return view('livewire.home.posts.info-blog');
     }
 
     public function submit($id = null)

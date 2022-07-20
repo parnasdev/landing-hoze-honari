@@ -1,5 +1,5 @@
-<div>
-    <header class="header-desktop">
+<div x-data>
+    <header class="header-desktop" x-show="window.innerWidth>868">
         <div class="prs-responsive">
             <div class="w-90 mx-auto p-header">
                 <a href="" class="logo-header">
@@ -7,10 +7,10 @@
                 </a>
                 <div class="r">
                     <ul class="menu-header">
-                        <li><a href="">صفحه اصلی</a></li>
-                        <li><a href=""> اخبار و مقالات</a></li>
+                        <li><a href="/">صفحه اصلی</a></li>
+                        <li><a href="/posts"> اخبار و مقالات</a></li>
                         <li><a href=""> درباره ما</a></li>
-                        <li><a href="">تماس باما</a></li>
+                        <li><a href="/contactus">تماس باما</a></li>
                     </ul>
                 </div>
                 <div class="l">

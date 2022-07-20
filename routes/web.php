@@ -20,7 +20,7 @@ Route::get('/contactus', \App\Http\Livewire\Home\ContactPage::class)->name('cont
 Route::get('/portfolio', \App\Http\Livewire\Home\PortifiloList::class)->name('portifilos.index');
 Route::get('/portfolio/{portfolio:slug}', \App\Http\Livewire\Home\PortifolioInfo::class)->name('portifilos.show');
 Route::get('/posts', \App\Http\Livewire\Home\Posts\ListBlog::class)->name('posts.index');
-Route::get('/posts/{post:slug}', \App\Http\Livewire\Home\Posts\InfoBlog::class)->name('posts.show');
+Route::get('/posts/info', \App\Http\Livewire\Home\Posts\InfoBlog::class)->name('posts.show');
 Route::get('authenticate', \App\Http\Livewire\Home\Auth\AuthenticatePage::class)->name('login')->middleware('guest');
 
 Route::prefix('user')->middleware('auth:web')->name('dashboard.')->group(function () {
