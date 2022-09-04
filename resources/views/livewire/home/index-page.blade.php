@@ -7,10 +7,10 @@
                         <div class="title">
                             <h4>اطلاعات تکمیلی</h4>
                         </div>
-                        @livewire('form-builder' , ['name' => 'vWZKG'])
+                        @livewire('form-builder', ['name' => 'vWZKG'])
 
                         <div class="line-horizontal bg-gray"></div>
-                        <div class="text">
+                        <div class="text scroller" style="height: 580px">
                             {!! config('options.rules') !!}
                             {{-- <p class="f-17 pb-5 text-align-center">بسم الله الرحمن الرحیم</p>
                             <p class="f-15">
@@ -56,11 +56,22 @@
                     <div class="left-list flex-49 m-flex-100">
                         <div class="p-banner">
                             <div class="c-banner">
-                                <img src="{{ collect(config('options.slider'))->first()['url'] }}" width="100%" height="900px"
-                                    class="radius-15 object-fit-fill" alt="">
+                                <img src="{{ collect(config('options.slider'))->first()['url'] }}" width="100%"
+                                    height="900px" class="radius-15 object-fit-fill" alt="">
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="success">
+            <div class="d-flex flex-direction-column align-items-center">
+                <div class="image">
+                    <img src="/images/success.gif" width="200px" height="200px" alt="">
+                </div>
+                <div class="text">
+                    <p>پیام شما با موفقیت ثبت شد</p>
                 </div>
             </div>
         </section>
