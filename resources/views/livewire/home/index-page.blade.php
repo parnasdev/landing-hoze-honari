@@ -7,7 +7,7 @@
                         <div class="title">
                             <h4>اطلاعات تکمیلی</h4>
                         </div>
-                        @livewire('form-builder', ['name' => 'vWZKG'])
+                        @livewire('form-builder', ['name' => 'vWZKG' , 'btnText' => 'ثبت اطلاعات'])
 
                         <div class="line-horizontal bg-gray"></div>
                         <div class="text scroller" style="height: 580px">
@@ -65,15 +65,6 @@
             </div>
         </section>
 
-        <section class="success">
-            <div class="d-flex flex-direction-column align-items-center">
-                <div class="image">
-                    <img src="/images/success.gif" width="200px" height="200px" alt="">
-                </div>
-                <div class="text">
-                    <p>پیام شما با موفقیت ثبت شد</p>
-                </div>
-            </div>
-        </section>
+
     </div>
 </div>

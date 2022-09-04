@@ -6,7 +6,7 @@
     </div>
     <input type="text" {{ $attributes }}/>
     @error("formControls.{$attributes['id']}")
-    <p class="m-0 text-danger small">{{ $message }}</p>
+    <p class="f-13 text-danger">{{ $message }}</p>
     @enderror
 </div>
 
