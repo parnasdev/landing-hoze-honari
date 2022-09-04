@@ -10,13 +10,12 @@ class SectionTwo extends Component
 {
     use DynamicFunction;
     protected $listeners = ['setData', 'getFile'];
-    public array|null $item = null;
-    public int|null $index = null;
-    public int|null $index1 = null;
-    public string|null $direction = null;
+
+    public $conditions;
 
     public function mount()
     {
+        $this->conditions = Setting::query()->where('name','rules')->first()?->value ?? [];
     }
 
 
@@ -50,11 +49,17 @@ class SectionTwo extends Component
         return $types->get($name) ?? ['type' => '-', 'label' => '-'];
     }
 
-    public function submit()
-    {
-        Setting::query()->where('name' , 'sectionTwo')->first()->update([
-            'value' => $this->item
-        ]);
+    public function submit(){
+        $setting = Setting::query()->where('name','rules')->first();
+        if(empty($setting)){
+            Setting::query()->create([
+                'name'=>'rules',
+                'value'=> $this->conditions,
+            ]);
+        }
+        else{
+            $setting->update(['value'=> $this->conditions]);
+        }
 
         $this->dispatchBrowserEvent('toast-message' , ['message' => 'تنظیمات اعمال شد.' , 'icon' => 'success']);
 

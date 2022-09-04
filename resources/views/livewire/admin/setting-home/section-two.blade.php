@@ -4,7 +4,7 @@
             <strong>چند لحظه صبر کنید...</strong>
             <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
         </div>
-        @if(!is_null($item))
+        {{-- @if(!is_null($item))
             @foreach($item ?? [] as $key1 => $data)
                 <x-parnas.form-group class="flex-99 mb-2">
                     @switch($this->convert($key1)['type'])
@@ -446,7 +446,12 @@
                     @endswitch
                 </x-parnas.form-group>
             @endforeach
-        @endif
+        @endif --}}
+
+        <div>
+
+        </div>
+
         <div class="c-btn justify-content-end">
             <x-parnas.buttons.button class="btn bg-success text-white radius-5">
                 ثبت

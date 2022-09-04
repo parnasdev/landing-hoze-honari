@@ -16,12 +16,15 @@ class SettingPage extends Component
 
     public function mount()
     {
+
     }
 
     public function render()
     {
         return view('livewire.admin.setting.setting-page');
     }
+
+
 
 
 }
