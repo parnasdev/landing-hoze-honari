@@ -29,9 +29,9 @@
         document.getElementById('progressBar').style.width = scrolled + '%';
     }
 }" @scroll.window="progressIndicator()" @scroll-top.window="window.scrollTo(0,0)">
-    <div class="progress-container">
+    {{-- <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
-    </div>
+    </div> --}}
     {{ $slot }}
     <livewire:scripts />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
