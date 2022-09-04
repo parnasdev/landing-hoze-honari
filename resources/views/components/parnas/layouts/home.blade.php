@@ -75,9 +75,9 @@
                 </div>
             </div>
     <div x-show="!loader" style="display: none">
-    <div class="progress-container">
+    {{-- <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
-    </div>
+    </div> --}}
 
     <livewire:home.sections.headers/>
     {{ $slot }}
