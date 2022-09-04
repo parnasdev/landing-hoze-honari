@@ -15080,7 +15080,7 @@ This set of fonts are used in this project under the license: (.....)
 
 @media (min-width: 1920px) {
   .text-paragraph {
-    height: 500px !important;
+    height: 600px !important;
   }
 
   .footer-base {
