@@ -2,18 +2,16 @@
 
 namespace App\Http\Livewire\Admin\SettingHome;
 
-use App\Http\Extra\DynamicFunction;
+
 use App\Models\Setting;
 use Livewire\Component;
 
 class SectionOne extends Component
 {
-    use DynamicFunction;
+    use WithF;
     protected $listeners = ['setData', 'getFile'];
-    public array|null $item = null;
-    public int|null $index = null;
-    public int|null $index1 = null;
-    public string|null $direction = null;
+
+
 
     public function mount()
     {
