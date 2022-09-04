@@ -96,6 +96,7 @@ a {
 p {
     text-align: justify;
     line-height: 30px;
+    margin: 0;
 }
 
 textarea {
@@ -232,7 +233,7 @@ img {
     padding: 0;
     font-family: "Yekan_Bakh", monospace;
     background-color: #fff;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 [data-theme="dark"] {
@@ -11807,13 +11808,44 @@ This set of fonts are used in this project under the license: (.....)
     border: 0;
 }
 
+// .footer-base{
+//     position: relative;
+//     bottom: -30px;
+// }
+
+.text-paragraph{
+    p{
+        padding-left: 10px;
+    }
+}
+
+
+@media (min-width:1920px){
+    .text-paragraph{
+        height: 500px !important;
+    }
+    .footer-base{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
 @media (max-width: 700px){
     .data-form {
+        flex-direction: column-reverse;
             .left-list {
                 img {
-                    height: 300px;
+                    height: 300px !important;
                     object-fit: initial;
                 }
+            }
+        }
+        .footer-base {
+            .p-text{
+                flex-direction: column;
+                align-items: center;
+                font-size: 11px;
             }
         }
 }

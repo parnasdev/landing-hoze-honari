@@ -1,16 +1,17 @@
 <div>
-    <div class="py-20">
+    <div class="py-10">
         <section>
             <div class="main-box">
-                <div class="data-form flex-100 m-flex-100 d-flex flex-wrap align-items-start justify-content-between">
+                <div
+                    class="data-form flex-100 m-flex-100 d-flex flex-wrap align-items-center justify-content-between h-100">
                     <div class="right-list flex-49 m-flex-100">
                         <div class="title">
                             <h4>اطلاعات تکمیلی</h4>
                         </div>
-                        @livewire('form-builder', ['name' => 'vWZKG' , 'btnText' => 'ثبت اطلاعات'])
+                        @livewire('form-builder', ['name' => 'vWZKG', 'btnText' => 'ثبت اطلاعات'])
 
                         <div class="line-horizontal bg-gray"></div>
-                        <div class="text scroller" style="height: 580px">
+                        <div class="text-paragraph text scroller" style="height: 400px">
                             {!! config('options.rules') !!}
                             {{-- <p class="f-17 pb-5 text-align-center">بسم الله الرحمن الرحیم</p>
                             <p class="f-15">
@@ -57,14 +58,12 @@
                         <div class="p-banner">
                             <div class="c-banner">
                                 <img src="{{ collect(config('options.slider'))->first()['url'] }}" width="100%"
-                                    height="900px" class="radius-15 object-fit-fill" alt="">
+                                    style="height: 88vh" class="radius-15 object-fit-fill" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
     </div>
 </div>
