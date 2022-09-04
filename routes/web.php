@@ -14,23 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', \App\Http\Livewire\Home\IndexPage::class)->name('home');
-Route::get('/aboutus', \App\Http\Livewire\Home\AboutPage::class)->name('aboutus');
-Route::get('/contactus', \App\Http\Livewire\Home\ContactPage::class)->name('contactus');
-//Route::get('/teacher', \App\Http\Livewire\Home\Pages\teacher::class);
-Route::get('/portfolio', \App\Http\Livewire\Home\PortifiloList::class)->name('portifilos.index');
-Route::get('/portfolio/{portfolio:slug}', \App\Http\Livewire\Home\PortifolioInfo::class)->name('portifilos.show');
-Route::get('/posts', \App\Http\Livewire\Home\Posts\ListBlog::class)->name('posts.index');
-Route::get('/posts/info', \App\Http\Livewire\Home\Posts\InfoBlog::class)->name('posts.show');
-Route::get('authenticate', \App\Http\Livewire\Home\Auth\AuthenticatePage::class)->name('login')->middleware('guest');
 
-Route::prefix('user')->middleware('auth:web')->name('dashboard.')->group(function () {
-    Route::get('/', \App\Http\Livewire\Home\Dashboard\IndexPage::class)->name('index');
-    Route::get('/profile', \App\Http\Livewire\Home\Dashboard\ProfilePage::class)->name('profile');
-});
+// Route::get('/aboutus', \App\Http\Livewire\Home\AboutPage::class)->name('aboutus');
+// Route::get('/contactus', \App\Http\Livewire\Home\ContactPage::class)->name('contactus');
+// //Route::get('/teacher', \App\Http\Livewire\Home\Pages\teacher::class);
+// Route::get('/portfolio', \App\Http\Livewire\Home\PortifiloList::class)->name('portifilos.index');
+// Route::get('/portfolio/{portfolio:slug}', \App\Http\Livewire\Home\PortifolioInfo::class)->name('portifilos.show');
+// Route::get('/posts', \App\Http\Livewire\Home\Posts\ListBlog::class)->name('posts.index');
+// Route::get('/posts/info', \App\Http\Livewire\Home\Posts\InfoBlog::class)->name('posts.show');
+// Route::get('authenticate', \App\Http\Livewire\Home\Auth\AuthenticatePage::class)->name('login')->middleware('guest');
 
-Route::middleware(['auth:web' , 'role_access:panel'])->group(function () {
-    Route::get('/builder/{page}' , \App\Http\Livewire\Admin\Builder\BuilderPage::class)->name('builder.page');
-});
+// Route::prefix('user')->middleware('auth:web')->name('dashboard.')->group(function () {
+//     Route::get('/', \App\Http\Livewire\Home\Dashboard\IndexPage::class)->name('index');
+//     Route::get('/profile', \App\Http\Livewire\Home\Dashboard\ProfilePage::class)->name('profile');
+// });
+
+// Route::middleware(['auth:web' , 'role_access:panel'])->group(function () {
+//     Route::get('/builder/{page}' , \App\Http\Livewire\Admin\Builder\BuilderPage::class)->name('builder.page');
+// });
 
 //Route::get('page/{post:slug}', \App\Http\Livewire\Home\Pages\InfoPage::class)->name('page');
 //Route::get('/' , function () {

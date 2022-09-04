@@ -29,8 +29,8 @@ class IndexPage extends Component
 
     public function render()
     {
-        $posts = $this->readyToLoad ? Post::query()->where('post_type' , 'post')->where('status_id' , getStatus('publish'))->take(7)->get() : [];
-        return view('livewire.home.index-page', compact('posts'));
+        // $posts = $this->readyToLoad ? Post::query()->where('post_type' , 'post')->where('status_id' , getStatus('publish'))->take(7)->get() : [];
+        return view('livewire.home.index-page');
     }
 
     public function getCategory($type)
