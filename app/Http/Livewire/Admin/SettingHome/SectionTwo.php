@@ -15,28 +15,13 @@ class SectionTwo extends Component
     public int|null $index1 = null;
     public string|null $direction = null;
 
-    public string $lang;
-
     public function mount()
     {
-        if ($this->lang == 'en') {
-            $this->item = config('options.sectionTwoEn');
-        } else {
-            $this->item = config('options.sectionTwo');
-        }
-
     }
 
 
     public function updated($name)
     {
-        if ($name == 'lang') {
-            if ($this->lang == 'en') {
-                $this->item = config('options.sectionTwoEn');
-            } else {
-                $this->item = config('options.sectionTwo');
-            }
-        }
     }
 
     public function render()
@@ -67,7 +52,7 @@ class SectionTwo extends Component
 
     public function submit()
     {
-        Setting::query()->where('name' , $this->lang == 'fa' ? 'sectionTwo' : 'sectionTwoEn')->first()->update([
+        Setting::query()->where('name' , 'sectionTwo')->first()->update([
             'value' => $this->item
         ]);
 

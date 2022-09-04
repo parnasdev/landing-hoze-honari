@@ -15,27 +15,12 @@ class SectionFour extends Component
     public int|null $index1 = null;
     public string|null $direction = null;
 
-    public string $lang;
-
     public function mount()
     {
-        if ($this->lang == 'en') {
-            $this->item = config('options.sectionFourEn');
-        } else {
-            $this->item = config('options.sectionFour');
-        }
-
     }
 
     public function updated($name)
     {
-        if ($name == 'lang') {
-            if ($this->lang == 'en') {
-                $this->item = config('options.sectionFourEn');
-            } else {
-                $this->item = config('options.sectionFour');
-            }
-        }
     }
 
     public function render()
@@ -66,7 +51,7 @@ class SectionFour extends Component
 
     public function submit()
     {
-        Setting::query()->where('name' , $this->lang == 'fa' ? 'sectionFour' : 'sectionFourEn')->first()->update([
+        Setting::query()->where('name', 'sectionFour')->first()->update([
             'value' => $this->item
         ]);
 
