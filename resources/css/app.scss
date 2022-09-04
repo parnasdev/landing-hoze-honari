@@ -11834,6 +11834,7 @@ This set of fonts are used in this project under the license: (.....)
 @media (max-width: 700px){
     .data-form {
         flex-direction: column-reverse;
+        align-items: stretch;
             .left-list {
                 img {
                     height: 300px !important;
