@@ -39,7 +39,7 @@
                                         </div>
                                     </div>
                                     <!--! Button 3 -->
-                                 
+
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                     <div class="mb-10 p-10 border-top-solid-2 border-info bg-light" x-show="tab == 'general'">
                         <livewire:admin.setting.public-form wire:key="general"/>
                     </div>
-                
+
                     <div class="mb-10 p-10 border-top-solid-2 border-info bg-light" x-show="tab == 'homepage'" x-data="{ settingTab: @entangle('homeTab')}">
                         <div class="main-data c-group-btn d-flex align-items-center m-align-items-start flex-wrap justify-content-between">
                             <div class="d-flex flex-wrap align-items-center flex-75 m-flex-100">
@@ -66,68 +66,18 @@
                                         قسمت دوم
                                     </button>
                                 </div>
-                                <div class="c-btn ml-7 pb-5">
-                                    <button class="ancher btn-effect bg-info text-white radius-5" :class="{'bg-secondary': settingTab==='sectionThree'}"
-                                            @click="settingTab = 'sectionThree'">
-                                            <div class="circle-solid top-right bg-white"></div>
-                                        قسمت سوم
-                                    </button>
                                 </div>
-                                <div class="c-btn ml-7 pb-5">
-                                    <button class="ancher btn-effect bg-info text-white radius-5" :class="{'bg-secondary': settingTab==='sectionFour'}"
-                                            @click="settingTab = 'sectionFour'">
-                                            <div class="circle-solid top-right bg-white"></div>
-                                        قسمت چهارم
-                                    </button>
-                                </div>
-                                <div class="c-btn ml-7 pb-5">
-                                    <button class="ancher btn-effect bg-info text-white radius-5" :class="{'bg-secondary': settingTab==='sectionFive'}"
-                                            @click="settingTab = 'sectionFive'">
-                                            <div class="circle-solid top-right bg-white"></div>
-                                        قسمت پنجم
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="flex-20 m-flex-100">
-                                <x-parnas.form-group class="select flex-100 align-items-end" wire:ignore>
-                                    <x-parnas.inputs.select2 placeholder="زبان" class="form-select" id="lang"
-                                                             wire:model="lang">
-                                        <x-parnas.inputs.option value="fa">
-                                            فارسی
-                                        </x-parnas.inputs.option>
-                                        <x-parnas.inputs.option value="en">
-                                            انگلیسی
-                                        </x-parnas.inputs.option>
-                                    </x-parnas.inputs.select2>
-                                </x-parnas.form-group>
                             </div>
                         </div>
 
                         @if($homeTab == 'sectionOne')
                             <div class="my-10">
-                                <livewire:admin.setting-home.section-one :lang="$lang"/>
+                                <livewire:admin.setting-home.section-one/>
                             </div>
                         @endif
                         @if($homeTab == 'sectionTwo')
                             <div class="my-10">
-                                <livewire:admin.setting-home.section-two :lang="$lang"/>
-                            </div>
-                        @endif
-                        @if($homeTab == 'sectionThree')
-                            <div class="my-10">
-                                <livewire:admin.setting-home.section-three :lang="$lang"/>
-                            </div>
-                        @endif
-
-                        @if($homeTab == 'sectionFour')
-                            <div class="my-10">
-                                <livewire:admin.setting-home.section-four :lang="$lang"/>
-                            </div>
-                        @endif
-
-                        @if($homeTab == 'sectionFive')
-                            <div class="my-10">
-                                <livewire:admin.setting-home.section-five :lang="$lang"/>
+                                <livewire:admin.setting-home.section-two/>
                             </div>
                         @endif
 

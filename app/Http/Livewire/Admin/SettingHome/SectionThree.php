@@ -15,27 +15,12 @@ class SectionThree extends Component
     public int|null $index1 = null;
     public string|null $direction = null;
 
-    public string $lang;
-
     public function mount()
     {
-        if ($this->lang == 'en') {
-            $this->item = config('options.sectionThreeEn');
-        } else {
-            $this->item = config('options.sectionThree');
-        }
-
     }
 
     public function updated($name)
     {
-        if ($name == 'lang') {
-            if ($this->lang == 'en') {
-                $this->item = config('options.sectionThreeEn');
-            } else {
-                $this->item = config('options.sectionThree');
-            }
-        }
     }
 
     public function render()
@@ -66,7 +51,7 @@ class SectionThree extends Component
 
     public function submit()
     {
-        Setting::query()->where('name' , $this->lang == 'fa' ? 'sectionThree' : 'sectionThreeEn')->first()->update([
+        Setting::query()->where('name' , 'sectionThree')->first()->update([
             'value' => $this->item
         ]);
 

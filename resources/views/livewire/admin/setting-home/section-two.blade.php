@@ -4,7 +4,7 @@
             <strong>چند لحظه صبر کنید...</strong>
             <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
         </div>
-        @if(!is_null($item))
+        {{-- @if(!is_null($item))
             @foreach($item ?? [] as $key1 => $data)
                 <x-parnas.form-group class="flex-99 mb-2">
                     @switch($this->convert($key1)['type'])
@@ -446,7 +446,73 @@
                     @endswitch
                 </x-parnas.form-group>
             @endforeach
-        @endif
+        @endif --}}
+
+        <div class="mx-10 m-mx-5 mb-15">
+            <div class="c-data">
+                <div class="rx-title pb-10">
+                    <div class="text">
+                        <h6>قوانین و مقرارت</h6>
+                    </div>
+                    <div class="p-rx ">
+                        <div class="rx-border-rectangle"></div>
+                        <div class="rx-border-rectangle-after"></div>
+                    </div>
+                </div>
+                <div class="my-10" x-data="{
+                            faq: @entangle('conditions').defer,
+                            addFaq() {
+                                this.faq.push({ question: '', answer: '' });
+                            },
+                            removeFaq(index) {
+                                this.faq.splice(index, 1)
+                            }
+
+                        }">
+                    <table class="table table-sm table-bordered w-100">
+                        <thead>
+                        <tr>
+                            <th>
+                                #
+                            </th>
+                            <th class="f-12">سوال</th>
+                            <th class="f-12">پاسخ</th>
+                            <th>
+                                <x-parnas.buttons.button type="button" class="btn bg-success radius-5"
+                                                         @click="addFaq()">
+                                    <i class="fas fa-plus fa-1x text-white"></i>
+                                </x-parnas.buttons.button>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <template x-for="(item , index) in faq">
+                            <tr>
+                                <td class="f-12" x-text="index + 1"></td>
+                                <td>
+                                    <div class="c-input flex-100">
+                                        <x-parnas.inputs.textarea x-model="item.question" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="c-input flex-100">
+                                        <x-parnas.inputs.textarea x-model="item.answer" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <x-parnas.buttons.button type="button" class="btn bg-danger radius-5"
+                                                             @click="removeFaq(index)">
+                                        <i class="fas fa-times text-white"></i>
+                                    </x-parnas.buttons.button>
+                                </td>
+                            </tr>
+                        </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <div class="c-btn justify-content-end">
             <x-parnas.buttons.button class="btn bg-success text-white radius-5">
                 ثبت

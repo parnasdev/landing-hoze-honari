@@ -11,19 +11,20 @@ class SettingPage extends Component
     public string $tab = 'general';
     public string $homeTab = 'sectionOne';
 
-    public string $lang = 'fa';
-
-    protected $queryString = ['tab', 'homeTab' , 'lang'];
+    protected $queryString = ['tab', 'homeTab'];
 
 
     public function mount()
     {
+
     }
 
     public function render()
     {
         return view('livewire.admin.setting.setting-page');
     }
+
+
 
 
 }

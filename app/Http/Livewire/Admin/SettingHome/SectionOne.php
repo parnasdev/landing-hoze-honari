@@ -2,29 +2,19 @@
 
 namespace App\Http\Livewire\Admin\SettingHome;
 
-use App\Http\Extra\DynamicFunction;
+
 use App\Models\Setting;
 use Livewire\Component;
 
 class SectionOne extends Component
 {
-    use DynamicFunction;
+    use WithF;
     protected $listeners = ['setData', 'getFile'];
-    public array|null $item = null;
-    public int|null $index = null;
-    public int|null $index1 = null;
-    public string|null $direction = null;
 
-    public string $lang;
+
 
     public function mount()
     {
-        if ($this->lang == 'en') {
-            $this->item = config('options.sectionOneEn');
-        } else {
-            $this->item = config('options.sectionOne');
-        }
-
     }
 
     public function render()
@@ -34,13 +24,6 @@ class SectionOne extends Component
 
     public function updated($name)
     {
-        if ($name == 'lang') {
-            if ($this->lang == 'en') {
-                $this->item = config('options.sectionOneEn');
-            } else {
-                $this->item = config('options.sectionOne');
-            }
-        }
     }
 
 
@@ -67,7 +50,7 @@ class SectionOne extends Component
 
     public function submit()
     {
-        Setting::query()->where('name' , $this->lang == 'fa' ? 'sectionOne' : 'sectionOneEn')->first()->update([
+        Setting::query()->where('name' , 'sectionOne')->first()->update([
             'value' => $this->item
         ]);
 

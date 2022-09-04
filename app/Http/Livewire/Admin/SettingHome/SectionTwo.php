@@ -9,34 +9,17 @@ use Livewire\Component;
 class SectionTwo extends Component
 {
     use DynamicFunction;
-    protected $listeners = ['setData', 'getFile'];
-    public array|null $item = null;
-    public int|null $index = null;
-    public int|null $index1 = null;
-    public string|null $direction = null;
 
-    public string $lang;
+    public $conditions;
 
     public function mount()
     {
-        if ($this->lang == 'en') {
-            $this->item = config('options.sectionTwoEn');
-        } else {
-            $this->item = config('options.sectionTwo');
-        }
-
+        $this->conditions = Setting::query()->where('name','rules')->first()?->value ?? [];
     }
 
 
     public function updated($name)
     {
-        if ($name == 'lang') {
-            if ($this->lang == 'en') {
-                $this->item = config('options.sectionTwoEn');
-            } else {
-                $this->item = config('options.sectionTwo');
-            }
-        }
     }
 
     public function render()
@@ -44,39 +27,19 @@ class SectionTwo extends Component
         return view('livewire.admin.setting-home.section-two');
     }
 
-    public function close()
-    {
-        $this->dispatchBrowserEvent('close-modal');
-        $this->index = null;
-        $this->index1 = null;
-        $this->direction = null;
-        $this->item = null;
-    }
-
-    public function setData($e)
-    {
-        list($this->index, $this->index1, $this->direction, $this->item) = $e;
-    }
-
-    public function convert($name)
-    {
-        $types = collect(config('pagebuilder.types'));
-
-        return $types->get($name) ?? ['type' => '-', 'label' => '-'];
-    }
-
-    public function submit()
-    {
-        Setting::query()->where('name' , $this->lang == 'fa' ? 'sectionTwo' : 'sectionTwoEn')->first()->update([
-            'value' => $this->item
-        ]);
+    public function submit(){
+        $setting = Setting::query()->where('name','rules')->first();
+        if(empty($setting)){
+            Setting::query()->create([
+                'name'=>'rules',
+                'value'=> $this->conditions,
+            ]);
+        }
+        else{
+            $setting->update(['value'=> $this->conditions]);
+        }
 
         $this->dispatchBrowserEvent('toast-message' , ['message' => 'تنظیمات اعمال شد.' , 'icon' => 'success']);
 
-    }
-
-    public function getFile($e)
-    {
-        $this->fill([$e['input'] => url($e['value'])]);
     }
 }
