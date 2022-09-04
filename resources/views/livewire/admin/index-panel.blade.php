@@ -1,4 +1,4 @@
-<div>
+{{-- <div>
     <div class="flex-100 mx-10 m-mx-5">
         <!-- row *> design box -->
         <div class="p-info justify-content-between mt-10 pr-7 mr-7 m-ml-10 m-mr-0">
@@ -200,7 +200,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--? row -->
     {{-- <div class="flex-100 mx-10 m-mx-5"> --}}
     {{-- <div class="main-data flex-100 d-flex justify-content-between mx-5 mb-5"> --}}
@@ -764,7 +764,7 @@
     {{-- </div> --}}
     {{-- </div> --}}
     {{-- <!--? row --> --}}
-    <div class="flex-100 mx-10 m-mx-5">
+    {{-- <div class="flex-100 mx-10 m-mx-5">
         <div class="main-data flex-100 d-flex justify-content-between mx-5 mb-5">
             <!--! child -->
             <div class="main-data-c dark-theme box-design bg-white flex-49 px-5 ml-6 mb-6" x-data="{
@@ -869,11 +869,12 @@
         </div>
     </div>
     <livewire:admin.uploader-modal></livewire:admin.uploader-modal>
-</div>
-@push('scripts')
+</div> --}}
+{{-- @push('scripts')
     <script>
         Chart.defaults.font.size = 11;
         Chart.defaults.font.family = 'Yekan_Bakh'
     </script>
-@endpush
+@endpush --}}
+<div></div>
 @push('title', 'داشبورد')
