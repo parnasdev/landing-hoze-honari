@@ -14,7 +14,7 @@ class SectionTwo extends Component
 
     public function mount()
     {
-        $this->conditions = Setting::query()->where('name','rules')->first()?->value ?? [];
+        $this->conditions = Setting::query()->where('name','rules')->first()?->value ?? '';
     }
 
 

@@ -448,7 +448,7 @@
             @endforeach
         @endif --}}
 
-        <div class="mx-10 m-mx-5 mb-15">
+        <div class="mx-10 m-mx-5 mb-15" wire:ignore>
             <div class="c-data">
                 <div class="rx-title pb-10">
                     <div class="text">
@@ -459,7 +459,7 @@
                         <div class="rx-border-rectangle-after"></div>
                     </div>
                 </div>
-                <div class="my-10" x-data="{
+                {{-- <div class="my-10" x-data="{
                             faq: @entangle('conditions').defer,
                             addFaq() {
                                 this.faq.push({ question: '', answer: '' });
@@ -509,7 +509,9 @@
                         </template>
                         </tbody>
                     </table>
-                </div>
+                </div> --}}
+                <x-parnas.inputs.editor id="description" placeholder="متن خود را بنویسید"
+                                        wire:model="conditions" />
             </div>
         </div>
 

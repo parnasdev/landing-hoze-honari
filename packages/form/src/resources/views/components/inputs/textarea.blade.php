@@ -1,7 +1,8 @@
-<div class="item">
-    <div class="label">
-        {!! $icon !!}
-        <label for="{{ $attributes['id'] ?? '' }}">{{ $label }}</label>
+<div class="c-input flex-49 m-flex-100">
+    <div class="title d-flex align-items-center pb-10">
+        <div class="text">
+            <label for="{{ $attributes['id'] ?? '' }}" class="f-15 text-63">{{ $label }}</label>
+        </div>
     </div>
     <textarea {{ $attributes }}></textarea>
     @error("formControls.{$attributes['id']}")

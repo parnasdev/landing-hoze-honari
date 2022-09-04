@@ -7,51 +7,12 @@
                         <div class="title">
                             <h4>اطلاعات تکمیلی</h4>
                         </div>
-                        <div class="">
-                            {{-- form --}}
-                            <div
-                                class="col-xl-12 col-lg-12 col-12 d-flex flex-wrap align-items-center justify-content-between mt-20 pb-20">
-                                {{-- child --}}
-                                <div class="c-input flex-49 m-flex-100">
-                                    <div class="title d-flex align-items-center pb-10">
-                                        <div class="text">
-                                            <label for="" class="f-15 text-63">نام و نام خانوادگی</label>
-                                        </div>
-                                    </div>
-                                    <input type="text" />
-                                </div>
-                                {{-- child --}}
-                                <div class="c-input flex-49 m-flex-100">
-                                    <div class="title d-flex align-items-center pb-10">
-                                        <div class="text">
-                                            <label for="" class="f-15 text-63">شماره تلفن همراه</label>
-                                        </div>
-                                    </div>
-                                    <input type="text" />
-                                </div>
-                                {{-- child --}}
-                                <div class="c-input flex-49 m-flex-100">
-                                    <div class="title d-flex align-items-center pb-10">
-                                        <div class="text">
-                                            <label for="" class="f-15 text-63">لینک اثر</label>
-                                        </div>
-                                    </div>
-                                    <input type="text" />
-                                </div>
-                                {{-- upload image --}}
-                                <div class="text flex-70 m-flex-100" style="margin-top: -15px">
-                                    <p class="">جهت آپلود عکس وارد سایت <a href="https://uupload.ir"
-                                            class="ltr text-info f-17" target="_blank">https://uupload.ir</a>
-                                        شوید</p>
-                                </div>
-                            </div>
-                            <div class="c-btn justify-content-end">
-                                <button class="btn text-white bg-success py-14 px-18 radius-5 f-15">ثبت اطلاعات</button>
-                            </div>
-                        </div>
+                        @livewire('form-builder' , ['name' => 'vWZKG'])
+
                         <div class="line-horizontal bg-gray"></div>
                         <div class="text">
-                            <p class="f-17 pb-5 text-align-center">بسم الله الرحمن الرحیم</p>
+                            {!! config('options.rules') !!}
+                            {{-- <p class="f-17 pb-5 text-align-center">بسم الله الرحمن الرحیم</p>
                             <p class="f-15">
                                 وره در نظر دارد، اولین مستند جمع¬سپار از مراسم با شکوه اربعین را با مشارکت
                                 مردم تولید نماید.
@@ -89,13 +50,13 @@
                             </p>
                             <p class="f-15">
                                 با تشکر. مرکز مستند و برنامه تلویزیونی سوره
-                            </p>
+                            </p> --}}
                         </div>
                     </div>
                     <div class="left-list flex-49 m-flex-100">
                         <div class="p-banner">
                             <div class="c-banner">
-                                <img src="./images/banner.jpg" width="100%" height="900px"
+                                <img src="{{ collect(config('options.slider'))->first()['url'] }}" width="100%" height="900px"
                                     class="radius-15 object-fit-fill" alt="">
                             </div>
                         </div>
