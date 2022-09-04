@@ -6,7 +6,7 @@
                     class="data-form flex-100 m-flex-100 d-flex flex-wrap align-items-center justify-content-between h-100">
                     <div class="right-list flex-49 m-flex-100">
                         <div class="title">
-                            <h4>اطلاعات تکمیلی</h4>
+                            <h4>اطلاعات تکمیلی جهت شرکت در کمپین</h4>
                         </div>
                         @livewire('form-builder', ['name' => 'vWZKG', 'btnText' => 'ثبت اطلاعات'])
 
