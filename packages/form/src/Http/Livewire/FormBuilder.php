@@ -13,6 +13,8 @@ class FormBuilder extends Component
     public Form | null $form;
     public $btnText = 'ارسال';
 
+    public $success = false;
+
     public $formControls = [];
 
     public function mount()
@@ -45,6 +47,8 @@ class FormBuilder extends Component
         $this->form->inboxes = $inboxes;
 
         $this->form->save();
+
+        $this->success = true;
 
         foreach ($this->form->inputs ?? [] as $input) {
             $this->formControls[$input['id']] = '';
