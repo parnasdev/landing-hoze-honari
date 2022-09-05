@@ -4,6 +4,39 @@
             <strong>چند لحظه صبر کنید...</strong>
             <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
         </div>
+        <div class="c-input flex-49 m-flex-100">
+            <div class="title d-flex align-items-center pb-10">
+                <div class="text">
+                    <label for="" class="f-15 text-63">لطفا کد فرم مورد نظر را وارد کنید:</label>
+                </div>
+            </div>
+            <input id="form_code" type="text" wire:model="form_code" />
+            {{-- @error("formControls.{$attributes['id']}")
+            <p class="m-0 text-danger small">{{ $message }}</p>
+            @enderror --}}
+        </div>
+        <div class="c-btn justify-content-end">
+            <x-parnas.buttons.button class="btn bg-success text-white radius-5">
+                ثبت
+            </x-parnas.buttons.button>
+        </div>
+    </form>
+    {{-- <div class="c-input flex-49 m-flex-100">
+        <div class="title d-flex align-items-center pb-10">
+            <div class="text">
+                <label for="{{ $attributes['id'] ?? '' }}" class="f-15 text-63">{{ $label }}</label>
+            </div>
+        </div>
+        <input type="text" {{ $attributes }}/>
+        @error("formControls.{$attributes['id']}")
+        <p class="m-0 text-danger small">{{ $message }}</p>
+        @enderror
+    </div> --}}
+    {{-- <form wire:submit.prevent="submit">
+        <div class="align-items-center" wire:loading.flex wire:target="submit">
+            <strong>چند لحظه صبر کنید...</strong>
+            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+        </div>
         @if(!is_null($item))
             @foreach($item ?? [] as $key1 => $data)
                 <x-parnas.form-group class="flex-99 mb-2">
@@ -499,5 +532,5 @@
                 ثبت
             </x-parnas.buttons.button>
         </div>
-    </form>
+    </form> --}}
 </div>

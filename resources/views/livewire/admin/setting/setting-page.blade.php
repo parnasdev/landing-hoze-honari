@@ -66,9 +66,16 @@
                                         قسمت دوم
                                     </button>
                                 </div>
+                                <div class="c-btn ml-7 pb-5">
+                                    <button class="ancher btn-effect bg-info text-white radius-5" :class="{'bg-secondary': settingTab==='sectionThree'}"
+                                            @click="settingTab = 'sectionThree'">
+                                            <div class="circle-solid top-right bg-white"></div>
+                                        قسمت سوم
+                                    </button>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
                         @if($homeTab == 'sectionOne')
                             <div class="my-10">
@@ -78,6 +85,11 @@
                         @if($homeTab == 'sectionTwo')
                             <div class="my-10">
                                 <livewire:admin.setting-home.section-two/>
+                            </div>
+                        @endif
+                        @if($homeTab == 'sectionThree')
+                            <div class="my-10">
+                                <livewire:admin.setting-home.section-three/>
                             </div>
                         @endif
 

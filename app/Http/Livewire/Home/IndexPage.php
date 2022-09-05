@@ -17,6 +17,8 @@ class IndexPage extends Component
 
     public $readyToLoad = false;
 
+    public $form_code;
+
     public function loadPosts()
     {
         $this->readyToLoad = true;
@@ -24,6 +26,7 @@ class IndexPage extends Component
 
     public function mount()
     {
+        $this->form_code = Setting::query()->where('name','form_code')->first();
         // dd($this->getCategory(1));
     }
 

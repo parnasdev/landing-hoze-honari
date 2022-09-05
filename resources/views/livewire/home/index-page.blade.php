@@ -8,7 +8,7 @@
                         <div class="title">
                             <h4>اطلاعات تکمیلی جهت شرکت در کمپین</h4>
                         </div>
-                        @livewire('form-builder', ['name' => 'vWZKG', 'btnText' => 'ثبت اطلاعات'])
+                        @livewire('form-builder' , ['name' => config('options.form_code'), 'btnText' => 'ثبت اطلاعات'])
 
                         <div class="line-horizontal bg-gray"></div>
                         <div class="text-paragraph text scroller" style="height: 400px">
