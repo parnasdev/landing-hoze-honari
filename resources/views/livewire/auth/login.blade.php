@@ -92,7 +92,7 @@
                                     </form>
                                 </div>
                                 <div class="d-flex justify-content-center mt-20">
-                                    <a href="/" target="_target" class="text-dark border-bottom-solid-2 pb-4 px-10">مشاهده سایت آکادمی</a>
+                                    <a href="/" target="_target" class="text-dark border-bottom-solid-2 pb-4 px-10">مشاهده سایت</a>
                                 </div>
                             </div>
                         </div>

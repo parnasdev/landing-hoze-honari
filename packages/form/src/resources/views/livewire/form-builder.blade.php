@@ -31,7 +31,7 @@
                                                            class="ltr text-info f-17"
                                                            target="_blank">https://uupload.ir</a>
                         شوید،
-                        سپس لینک دریافت شده از سایت uupload.ir در کادر بالا وارد نمایید.
+                        سپس لینک دریافت شده از سایت uupload.ir را در کادر بالا وارد نمایید.
                     </p>
                 </div>
                 <x-form::button>

@@ -15101,8 +15101,8 @@ This set of fonts are used in this project under the license: (.....)
   }
   .data-form .left-list img {
     height: 440px !important;
-    -o-object-fit: initial;
-       object-fit: initial;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .footer-base .p-text {
