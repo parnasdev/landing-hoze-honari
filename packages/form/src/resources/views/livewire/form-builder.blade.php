@@ -2,7 +2,7 @@
     <form wire:submit.prevent="submit">
         @if (!empty($form) && !$success)
             <div
-                class="col-xl-12 col-lg-12 col-12 d-flex flex-wrap align-items-center justify-content-between mt-20 pb-20">
+                class="col-xl-12 col-lg-12 col-12 d-flex flex-wrap align-items-center justify-content-between mt-20 pb-5">
                 @foreach ($form->inputs ?? [] as $input)
                     @if ($input['controlType'] == 'textbox')
                         <x-form::inputs.text id="{{ $input['id'] }}" wire:model.defer="formControls.{{ $input['id'] }}"
@@ -27,7 +27,7 @@
                     @endif
                 @endforeach
                 <div class="text flex-70 m-flex-100">
-                    <p class="f-14">جهت آپلود اثر وارد سایت <a href="https://uupload.ir" class="ltr text-info f-14"
+                    <p class="f-14">جهت اثر وارد سایت <a href="https://uupload.ir" class="ltr text-info f-14"
                             target="_blank">https://uupload.ir</a>
                         شوید،
                         سپس لینک دریافت شده از سایت uupload.ir را در کادر بالا وارد نمایید.
