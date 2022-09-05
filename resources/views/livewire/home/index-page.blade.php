@@ -7,7 +7,7 @@
                         <div class="title">
                             <h4>اطلاعات تکمیلی</h4>
                         </div>
-                        @livewire('form-builder' , ['name' => 'vWZKG'])
+                        @livewire('form-builder' , ['name' => config('options.form_code')])
 
                         <div class="line-horizontal bg-gray"></div>
                         <div class="text">
