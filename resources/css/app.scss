@@ -11821,13 +11821,19 @@ This set of fonts are used in this project under the license: (.....)
 
 
 @media (min-width:1920px){
+    .data-form{
+        padding-bottom: 75px;
+    }
     .text-paragraph{
         height: 600px !important;
     }
-    .footer-base{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+}
+
+@media (min-width: 1740px){
+    .footer-base {
+            position: fixed;
+            bottom: -5px;
+            width: 100%;
     }
 }
 
@@ -11837,7 +11843,7 @@ This set of fonts are used in this project under the license: (.....)
         align-items: stretch;
             .left-list {
                 img {
-                    height: 300px !important;
+                    height: 440px !important;
                     object-fit: initial;
                 }
             }

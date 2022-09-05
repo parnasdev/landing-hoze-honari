@@ -3,7 +3,7 @@
         <section>
             <div class="main-box">
                 <div
-                    class="data-form flex-100 m-flex-100 d-flex flex-wrap align-items-center justify-content-between h-100">
+                    class="data-form flex-100 m-flex-100 d-flex flex-wrap align-items-start justify-content-between h-100">
                     <div class="right-list flex-49 m-flex-100">
                         <div class="title">
                             <h4>اطلاعات تکمیلی جهت شرکت در کمپین</h4>
@@ -58,7 +58,7 @@
                         <div class="p-banner">
                             <div class="c-banner">
                                 <img src="{{ collect(config('options.slider'))->first()['url'] }}" width="100%"
-                                    style="height: 88vh" class="radius-15 object-fit-fill" alt="">
+                                    style="height: 88vh" class="radius-15 object-fit-cover" alt="">
                             </div>
                         </div>
                     </div>
