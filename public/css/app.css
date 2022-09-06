@@ -4672,6 +4672,10 @@ readers do not read off random characters that represent icons */
   border-color: #17a2b8 !important;
 }
 
+.border-white {
+  border-color: #fff !important;
+}
+
 .border-secondary {
   border-color: #6c757d !important;
 }
@@ -4692,7 +4696,6 @@ ul {
 
 li {
   list-style-type: none;
-  cursor: pointer;
 }
 
 a {
@@ -4848,7 +4851,7 @@ img {
   margin: 0;
   padding: 0;
   font-family: "Yekan_Bakh", monospace;
-  background-color: #fff;
+  background-color: #f8f8f8;
   overflow-y: auto;
 }
 
@@ -11920,6 +11923,14 @@ button {
   .local-list-mobile {
     height: 450px !important;
   }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .iscontrollmobile {
+    display: none;
+  }
 }
 .pos-fixed-top-right {
   top: 20px;
@@ -12913,9 +12924,13 @@ button {
 }
 
 .selected-services {
-  background-color: #eeeeee !important;
+  background-color: #000d25 !important;
   padding: 6px 4px;
   border-radius: 6px;
+}
+
+.selected-services span {
+  color: #fff;
 }
 
 .our-service .controller-head {
@@ -12927,7 +12942,7 @@ button {
 .our-service .controller-head .main-grid .flex-services {
   flex: 0 0 100%;
   max-width: 100%;
-  height: 40px;
+  height: 50px;
 }
 
 .our-service .controller-head .main-grid .flex-services .our-services-card {
@@ -15078,20 +15093,21 @@ This set of fonts are used in this project under the license: (.....)
   padding-left: 10px;
 }
 
-@media (min-width: 1920px) {
-  .data-form {
-    padding-bottom: 75px;
-  }
+.line-height-30 {
+  line-height: 30px;
+}
 
+.line-height-35 {
+  line-height: 35px;
+}
+
+.line-height-40 {
+  line-height: 40px;
+}
+
+@media (min-width: 1920px) {
   .text-paragraph {
     height: 600px !important;
-  }
-}
-@media (min-width: 1740px) {
-  .footer-base {
-    position: fixed;
-    bottom: -5px;
-    width: 100%;
   }
 }
 @media (max-width: 700px) {
@@ -15100,7 +15116,8 @@ This set of fonts are used in this project under the license: (.....)
     align-items: stretch;
   }
   .data-form .left-list img {
-    height: 440px !important;
+    width: 100%;
+    height: 420px !important;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -15109,5 +15126,9 @@ This set of fonts are used in this project under the license: (.....)
     flex-direction: column;
     align-items: center;
     font-size: 11px;
+  }
+
+  .main-box {
+    padding: 0 5px;
   }
 }
