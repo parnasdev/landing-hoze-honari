@@ -15092,6 +15092,7 @@ This set of fonts are used in this project under the license: (.....)
 .text-paragraph {
   height: 500px !important;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .text-paragraph p {

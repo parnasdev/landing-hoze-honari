@@ -62,7 +62,7 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="main-data text-paragraph scroller d-flex align-items-center m-align-items-start flex-wrap justify-content-between f-15">
+                                                class="main-data c-group-btn text-paragraph scroller align-items-center m-align-items-start flex-wrap justify-content-between f-15">
                                                 <p class="text-align-center m-auto pb-12">بسم الله الرحمن الرحیم</p>
                                                 <ul>
                                                     <li class="pr-10 m-pr-0 pb-10">
@@ -186,7 +186,7 @@
                                         <div class="left-list flex-48 m-flex-100">
                                             <div class="p-banner">
                                                 <div class="c-banner">
-                                                    <img src="/images/banner-1.jpg" width="95%" style="height: auto"
+                                                    <img src="/images/banner-1.jpg" width="95%" style="height: 900px"
                                                         class="radius-15 object-fit-cover" alt="">
                                                 </div>
                                             </div>
@@ -210,7 +210,7 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="main-data text-paragraph scroller d-flex align-items-center m-align-items-start flex-wrap justify-content-between f-15">
+                                                class="main-data c-group-btn text-paragraph scroller align-items-center m-align-items-start flex-wrap justify-content-between f-15">
                                                 <p class="text-align-center m-auto pb-12">بسم الله الرحمن الرحیم</p>
                                                 <ul>
                                                     <li class="pr-10 m-pr-0 pb-10">
@@ -302,7 +302,7 @@
                                             <div class="p-banner">
                                                 <div class="c-banner">
                                                     <img src="/images/banner-2.jpg" width="95%"
-                                                        style="height: auto" class="radius-15 object-fit-cover"
+                                                        style="height: 900px" class="radius-15 object-fit-cover"
                                                         alt="">
                                                 </div>
                                             </div>
@@ -326,7 +326,7 @@
                                                 <h4>Regulations</h4>
                                             </div>
                                             <div
-                                                class="main-data text-paragraph scroller  d-flex align-items-center m-align-items-start flex-wrap justify-content-between ltr f-15">
+                                                class="main-data c-group-btn text-paragraph scroller align-items-center m-align-items-start flex-wrap justify-content-between ltr f-15">
                                                 <p class="text-align-center m-auto pb-12">
                                                     In the name of Allah, the Compassionate, the Merciful
                                                 </p>
