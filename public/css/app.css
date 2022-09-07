@@ -15089,6 +15089,11 @@ This set of fonts are used in this project under the license: (.....)
   border: 0;
 }
 
+.text-paragraph {
+  height: 500px !important;
+  overflow-y: auto;
+}
+
 .text-paragraph p {
   padding-left: 10px;
 }

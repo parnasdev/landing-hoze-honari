@@ -21,7 +21,7 @@
                                                 @click="changeTab = 'RulePersian'">
                                                 <!-- Title -->
                                                 <div class="paragraph">
-                                                    <span class="f-16">قوانین و مقرارت</span>
+                                                    <span class="f-16">آیــین نــامه</span>
                                                 </div>
                                             </div>
                                             <!--! Button 2 -->
@@ -30,7 +30,7 @@
                                                 @click="changeTab = 'RuleIraq'">
                                                 <!-- Title -->
                                                 <div class="paragraph">
-                                                    <span class="f-16">القواعد و القوانين التنظيمية</span>
+                                                    <span class="f-16">قواعد الخطاب</span>
                                                 </div>
                                             </div>
                                             <!--! Button 3 -->
@@ -39,7 +39,7 @@
                                                 @click="changeTab = 'RuleEnglish'">
                                                 <!-- Title -->
                                                 <div class="paragraph">
-                                                    <span class="f-16">Terms and Conditions</span>
+                                                    <span class="f-16">The rules of the letter</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -62,7 +62,7 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="main-data c-group-btn d-flex align-items-center m-align-items-start flex-wrap justify-content-between f-15">
+                                                class="main-data text-paragraph scroller d-flex align-items-center m-align-items-start flex-wrap justify-content-between f-15">
                                                 <p class="text-align-center m-auto pb-12">بسم الله الرحمن الرحیم</p>
                                                 <ul>
                                                     <li class="pr-10 m-pr-0 pb-10">
@@ -96,6 +96,14 @@
                                                             مراسم
                                                             اربعین را مد نظر
                                                             قرار دهید.
+                                                        </p>
+                                                    </li>
+                                                    <li class="pr-15 m-pr-5 pb-10">
+                                                        <p class="line-height-30">
+                                                            - از آنجایی که هدف این پویش در وهله¬ی اول، ساخت مستندی برای
+                                                            معرفی اربعین به غیرمسلمان¬هاست توجه داشته باشید که بهترین
+                                                            صحنه¬های اربعین از دید خودتان را برای آنها انتخاب کنید.
+                                                            صحنه¬ها و وقایعی که فکر می¬کنید دیدن آن برایشان جالب است.
                                                         </p>
                                                     </li>
                                                     <li class="pr-15 m-pr-5 pb-10">
@@ -178,7 +186,7 @@
                                         <div class="left-list flex-48 m-flex-100">
                                             <div class="p-banner">
                                                 <div class="c-banner">
-                                                    <img src="/images/banner-1.jpg" width="95%" style="height: 900px"
+                                                    <img src="/images/banner-1.jpg" width="95%" style="height: auto"
                                                         class="radius-15 object-fit-cover" alt="">
                                                 </div>
                                             </div>
@@ -202,7 +210,7 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="main-data c-group-btn d-flex align-items-center m-align-items-start flex-wrap justify-content-between f-15">
+                                                class="main-data text-paragraph scroller d-flex align-items-center m-align-items-start flex-wrap justify-content-between f-15">
                                                 <p class="text-align-center m-auto pb-12">بسم الله الرحمن الرحیم</p>
                                                 <ul>
                                                     <li class="pr-10 m-pr-0 pb-10">
@@ -294,7 +302,7 @@
                                             <div class="p-banner">
                                                 <div class="c-banner">
                                                     <img src="/images/banner-2.jpg" width="95%"
-                                                        style="height: 900px" class="radius-15 object-fit-cover"
+                                                        style="height: auto" class="radius-15 object-fit-cover"
                                                         alt="">
                                                 </div>
                                             </div>
@@ -318,7 +326,7 @@
                                                 <h4>Regulations</h4>
                                             </div>
                                             <div
-                                                class="main-data c-group-btn d-flex align-items-center m-align-items-start flex-wrap justify-content-between ltr f-15">
+                                                class="main-data text-paragraph scroller  d-flex align-items-center m-align-items-start flex-wrap justify-content-between ltr f-15">
                                                 <p class="text-align-center m-auto pb-12">
                                                     In the name of Allah, the Compassionate, the Merciful
                                                 </p>
@@ -423,7 +431,7 @@
                                             <div class="p-banner">
                                                 <div class="c-banner">
                                                     <img src="/images/banner-3.jpg" width="95%"
-                                                        style="height: 900px" class="radius-15 object-fit-cover"
+                                                        style="height: auto" class="radius-15 object-fit-cover"
                                                         alt="">
                                                 </div>
                                             </div>
