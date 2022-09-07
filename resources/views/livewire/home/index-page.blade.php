@@ -175,7 +175,7 @@
                                             </div>
                                             <div class="line-horizontal bg-gray"></div>
                                             <div class="rx-title text">
-                                                <h4 class="mt-5">اطلاعات تکمیلی جهت شرکت در کمپین</h4>
+                                                <h4 class="mt-10">اطلاعات تکمیلی جهت شرکت در کمپین</h4>
                                                 <div class="p-rx" style="top: 4px">
                                                     <div class="rx-border-rectangle"></div>
                                                     <div class="rx-border-rectangle-after"></div>
@@ -290,7 +290,7 @@
                                             </div>
                                             <div class="line-horizontal bg-gray"></div>
                                             <div class="rx-title title">
-                                                <h4 class="mt-5">معلومات إضافية للمشاركة في الحملة</h4>
+                                                <h4 class="mt-10">معلومات إضافية للمشاركة في الحملة</h4>
                                                 <div class="p-rx" style="top: 4px">
                                                     <div class="rx-border-rectangle"></div>
                                                     <div class="rx-border-rectangle-after"></div>
@@ -417,7 +417,7 @@
                                             </div>
                                             <div class="line-horizontal bg-gray"></div>
                                             <div class="rx-title title d-flex flex-direction-row-reverse">
-                                                <h4 class="mt-5">
+                                                <h4 class="mt-10">
                                                     Additional information to participate in the campaign
                                                 </h4>
                                                 <div class="p-rx iscontrollmobile" style="top: 3px">
